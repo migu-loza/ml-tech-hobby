@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Miguel's Tech Hobby</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <script src="javascript/script.js"></script>
+    <script>
+      window.onload = function () {
+        // circle animation
+        var canvas = document.getElementById("animateNow");
+        var context = canvas.getContext("2d");
+
+        setTimeout(drawFrame, 20);
+
+        var circleRadius = 9;
+        var circlePositionY = 9;
+        var circlePositionX = 0;
+
+        function drawFrame() {
+          context.clearRect(0, 0, canvas.width, canvas.height);
+                    
+          context.beginPath();
+          context.arc(circlePositionX, circlePositionY, circleRadius, 0, 2 * Math.PI);
+          context.strokeStyle = "white";
+          context.lineWidth = 1;
+          context.stroke();
+
+          circlePositionX += 20;
+          setTimeout(drawFrame, 40);
+        };
+      };
+    </script>
+  </head>
+
+  <body>
+    <!-- NAVIGATION MENU -->
+    <nav>
+      <ul class="nav-list" id="navList">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="videogames.html">Video Games</a></li>
+        <li><a href="tech.html">Tech</a></li>
+        <li><a href="contact.html">Contact</a></li> 
+      </ul>
+      <div class="hamburger-icon" id="hamburgerIcon">&#9776;</div>
+    </nav>
+
+    <!-- MAIN SECTION -->
+    <main>
+      <div class="main black-background" id="main">
+        <h1>Video Games</h1>
+        <h3>NES to Switch</h3>
+        <div>
+          <canvas id="animateNow" width="500" height="20" style="display: block; margin: 0 auto;"></canvas>
+        </div>
+        <br>
+        <div class="container">
+          <p>Born in <strong>1993</strong>, the first game I ever played was <em>Super Mario Bros.</em> for the Nintendo Entertainment System (NES). That's strange, because the Super Nintendo Entertainment System (SNES) was released two years before I was born. But that's how it worked out.</p>
+          <p>My cousin had both his NES and SNES hooked up in his parent's living room. Using the rectangular controller to guide the Italian plumber to the flag pole, it is then that I realized how fun it was to play a game. Before this, I was throwing eggs at my parent's shed in the back.</p>
+          <p>Then, I played my first ever 3D game: <em>Super Mario 64</em> for the Nintendo 64 (N64). My gosh, that is an experience I'll never forget in elementary school. Not only was it my favorite hero that you can control in many directions, but it was also something that I'd never seen before. <em>GoldenEye 007</em> was another favorite of mine as well as <em>Mario Party</em>. Both of these games were responsible for the phrase "Just one more game."</p>
+        </div>
+        <br>
+        <div class="container center">
+          <img src="images/nes-closeup.jpg" class="round-corner img-spacing" width="350" alt="Nintendo Entertainment System">
+          <img src="images/n64-setup.jpg" class="round-corner img-spacing" width="350" alt="Nintendo 64 with two controllers">
+        </div>
+      </div>
+      <div class="gradient-rect"></div>
+      <div class="main-afterblackbg">
+        <h3>The PlayStation Era</h3>
+        <br>
+        <br>
+        <div class="container">
+          <p>Growing up, I was introduced to other games. 4th grade brought me the introduction of <em>Grand Theft Auto</em>. As a 4th grader, that was not the game I should have been playing, but it was great! My brother and I eventually got a PlayStation 2 (PS2) from our parents. It was a magical time as we no longer needed to go to my cousin's house to play on the latest game console. We had our own copies of <em>Grand Theft Auto III</em>, <em>Grand Theft Auto: Vice City</em> and <em>Grand Theft Auto: San Andreas</em>. The amount of laughter and fun times my brother and I had is impossible to count.</p>
+          <p>Later on, we received a PlayStation 3 (PS3) for Christmas. We played games like <em>Call of Duty</em> and <em>Guitar Hero</em>. This was another "breakthrough" in our lives. It's silly to say this but it truly was a wonderful time for us. These games looked so good on the PS3 with all new graphics, faster load times, Blu-Ray technology, etc. It was exciting just like the time when we got the N64. I got so good at <em>Guitar Hero III</em> that I was able to beat "Through the Fire and Flames" on Expert once. I was far from the best player in the world, but I was the best in my high school at the time.</p>
+        </div>
+        <br>
+        <div class="container center">
+          <img src="images/playstation2-load.jpg" class="round-corner" width="350" alt="PlayStation 2 with a bunch of games">
+        </div>
+        <br>
+        <br>
+        <h3>Back to Basics</h3>
+        <br>
+        <br>
+        <div class="container">
+          <p>2011 was the year I graduated high school (We're the Ones) and my friends had went off to college, including myself. Playing those "more mature" games left a hollow feeling. I had these great games to play but no longer anyone to play with. High speed internet wasn't as readily available as it is today. So I bought a Nintendo 3DS (3DS) along with <em>The Legend of Zelda: Ocarina of Time</em> to pass the time by myself. I had a girlfriend at the time but things weren't working out between us. Then <em>Mario Kart 7</em> came out. I bought it. And I played the heck out of it.</p>
+          <p>My family and I went to Mexico (it would be the last time we'd go back to Mexico as a family due to the awful cartel situation that arose at the time) from West Michigan to Nayarit, Mexico. Just about the whole time I was racing. I raced and raced all on my own. <em>Mario Kart</em> is something I'm passionate about; it's my favorite game franchise. After coming back from Mexico, I created a YouTube channel to upload <em>Mario Kart</em> content. While studying architecture in college, I would upload racing commentary whenever I could. I built a following, raced with friends and strangers, and eventually was referred to as "the TWD98" of <em>Mario Kart 7</em>. TWD98 is a YouTuber famous for his <em>Mario Kart Wii</em> content.</p>
+        </div>
+        <br>
+        <br>
+        <h3>The Switch</h3>
+        <br>
+        <br>
+        <div class="container">
+          <p>Although I'm excited for the upcoming <em>Grand Theft Auto</em> game, I still come back to my Nintendo Switch (Switch). <strong>Fun fact:</strong> I won an Xbox Series X from Taco Bell! I ended up selling the console because I didn't use it as much as I thought I would.</p>
+          <p>To this day, I play "casual competitive" <em>Mario Kart 8: Deluxe</em> as well as other Mario games. My wife and I will play every now and then together with streamers or just by ourselves. Feel free to add me up on Switch: SW-0189-3772-4215.</p>
+        </div>
+        <br>
+        <div class="container center">
+          <img src="images/switch.jpeg" class="round-corner img-spacing" width="350" alt="Nintendo logo">
+          <img src="images/mk8dx-wiirr.jpeg" class="round-corner img-spacing" width="350" alt="Nintendo logo">
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer class="center">
+      <ul class="socials">
+          <li><a href="https://github.com/migu-loza" target="_blank"><img src="images/icons/github-sign.png" alt="GitHub logo"></a></li>
+          <li><a href="https://www.linkedin.com/in/miguellozano9/" target="_blank"><img src="images/icons/linkedin.png" alt="LinkedIn logo"></a></li>
+          <li><a href="https://www.twitter.com/miguloza/" target="_blank"><img src="images/icons/twitter.png" alt="Twitter/X logo"></a></li>
+      </ul>
+      <p class="credit">Icon made by Freepik, Pixel perfect, riajulislam, and Dave Gandy from www.flaticon.com
+      <br>
+      Photo by <a href="https://unsplash.com/@ninjason?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jason Leung</a> on <a href="https://unsplash.com/photos/classic-snes-console-ZV7lnfyQLmA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+      <br>
+      Photo by <a href="https://unsplash.com/@patsn?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Pat Moin</a> on <a href="https://unsplash.com/photos/black-and-gray-game-controller-P8ERfhQ_mq4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+      <br>
+      Photo by <a href="https://unsplash.com/@dmjdenise?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Denise Jans</a> on <a href="https://unsplash.com/photos/black-sony-dslr-camera-on-white-surface-uIemlFWQSC4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+      </p>
+  </footer>
+  </body>
+</html>
